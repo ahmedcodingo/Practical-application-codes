@@ -4,44 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>border</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
         div {
-         
-            background-color: white;
-            border-radius: 20px 20px 20px 20px ;
-            border: 2px solid black;
-            width: 400px;
-            height: 300px;
+            max-width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            box-shadow: 10px 20px 30px blue;
         }
+
+        form * {
+            margin-top: 15px;
+            color: white;
+            padding: 10px;
+            background-color: black;
+        }
+
+        input {
+            border: 1px solid blue;
+        }
+
+        button {
+            width: 150px;
+        }
+
         img {
-            margin-top: 40px;
-            margin-left: 40px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
         }
-        h1 {
-            font-size: small;
-            font-size: 20px;
-            margin-left: 40px;
-            font-weight: bolder;
+
+        .header {
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 5px 10px 15px blue;
+            padding: 1%;
         }
+
         a {
-            font-size: large;
             text-decoration: none;
-            border-bottom: 1px;
-            margin-left: 20px;
-            color: rgba(0, 0, 0, 0.833);
+            margin-left: 15%;
+            font-size: larger;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 255, 0.303);
+            text-decoration: none;
+            margin-left: 15%;
+            font-size: larger;
         }
     </style>
 </head>
 
 <body>
-<div>
-<img src="html-5.png" width="60px"/>
-<h1>Html</h1>
-<a href="">Learn Html ==> </a>
-</div>
+    <nav class="header">
+        <a href="http://">Home</a>
+        <a href="http://">Support</a>
+        <a href="http://">Email</a>
+        <a href="http://">Project</a>
+    </nav>
+    <div>
 
+        <form action="">
+            <center>
 
+                <h1>Ahmed Codingo</h1>
+                <br>
+                <input type="email" placeholder="email">
+                <br>
+                <input type="password" placeholder="password">
+                <br>
+                <button type="submit">Login</button>
+            </center>
+        </form>
+    </div>
 </body>
 
 </html>
