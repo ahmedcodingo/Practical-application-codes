@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="take.css" />
+    <style>
+body {
+  background-color: #fff;
+    color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="sidebar">
+            <i onclick="del()" class="fa-solid fa-x"></i>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Serivce</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projcets</a></li>
+        </div>
+
+
+        <ul>
+            <li class="hiden"><a href="#">Ahmed Codingo</a></li>
+            <li class="hiden"><a href="#home">Home</a></li>
+            <li class="hiden"><a href="#service">Serivce</a></li>
+            <li class="hiden"><a href="#about">About</a></li>
+            <li class="hiden"><a href="#project">Projcets</a></li>
+            <li class="hiden" onclick="document.body.classList.toggle('dark')" id="dark"><a href="#project">DARK MODE</a></li>
+            <i onclick="show()" class="fa fa-bars menu-btn"></i>
+        </ul>
+    </nav>
+    <div class="continer">
+        <div class="heading-card">
+            <div class="card">
+                <h1>HTML CSS JAVASCRIPT</h1>
+                <div class="img">
+                    <img src="portrait-happy-excited-man-holding-laptop-computer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function show() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function del() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+
+    </script>
+</body>
+
+</html>
